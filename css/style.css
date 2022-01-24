@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo{
+  padding: 5;
+  width: 10px;
+  margin: auto;
+}
