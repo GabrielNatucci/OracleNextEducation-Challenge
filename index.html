@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -11,11 +10,23 @@
   <h1 class = "titulo"> Codificador de mensagens </h1>
   <main class = "main">
     <section class="form-criptografar">
-    <form>
-      <label > </label>
-
-    </form>
+      <form>
+        <label for=" input-texto">Somente letras minúsculas e sem acento!</label>
+        <input class = "text-input" id = "input-texto" type="text" name="input-texto" placeholder="Insira seu texto aqui!">
+        <input class = "btn" type="submit" value="Criptografar" id="btnc">
+        <input class = "btn" type="submit" value="Descriptografar" id="btnd">
+      </form>
     </section>
+    <section>
+      <form>
+        <label class = "desc-tit">Mensagem criptografada:</label>
+        <input class="text-input" type="text" id="msg"></input>
+        <input class = "btn" type="submit" value="Clique para Copiar">
+
+      </form>
+    </section>
+
+
   </main>
 </body>
 </html>
