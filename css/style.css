@@ -7,5 +7,47 @@
 .titulo{
   text-align: center;
   padding: 5;
-  margin: auto;
+  margin: 1vw 0 1vw 0;
+  font-weight: bold;
 }
+
+body {
+  background-color: lightgrey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  background-color: salmon;
+  padding: 10px;
+  color: floralwhite;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  margin: 10px 0 0 2vw;
+}
+
+.cripto{
+  background-color: white;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0,0.5);
+  width: 32vw;
+}
+
+.text-input{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+
+

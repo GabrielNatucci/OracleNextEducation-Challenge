@@ -7,26 +7,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1 class = "titulo"> Codificador </h1>
+  <h1 class = "titulo"> Codificador de mensagens </h1>
+
   <main class = "main">
-    <section class="form-criptografar">
+
+    <section class="cripto">
       <form>
-        <label for=" input-texto">Somente letras minúsculas e sem acento!</label>
+        <label for="input-texto">Somente letras minúsculas e sem acento!</label>
         <input class = "text-input" id = "input-texto" type="text" name="input-texto" placeholder="Insira seu texto aqui!">
         <input class = "btn" type="submit" value="Criptografar" id="btnc">
         <input class = "btn" type="submit" value="Descriptografar" id="btnd">
       </form>
     </section>
-    <section>
+
+    <section class="cripto">
       <form>
-        <label class = "desc-tit">Mensagem criptografada:</label>
+        <label class = "desc-tit">Resultado da mensagem criptografada:</label>
         <input class="text-input" type="text" id="msg"></input>
         <input class = "btn" type="submit" value="Clique para Copiar">
-
       </form>
     </section>
 
-
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
