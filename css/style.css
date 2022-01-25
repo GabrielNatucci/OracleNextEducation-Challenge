@@ -4,16 +4,34 @@
   box-sizing: border-box;
 }
 
-.titulo{
+.divtitulo{
   text-align: center;
-  padding: 5;
-  margin: 1vw 0 1vw 0;
   font-weight: bold;
+  height: 60px;
+  padding: 10px;
+  width: 100%;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255,0.8);
+  background-color: rgb(19, 20, 21);
 }
 
+.divtitulo h1{
+  box-shadow: 1px black;
+}
+
+
 body {
-  background-color: lightgrey;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(30,31,33);
+}
+
+article{
+  text-align:center;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 2;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255,0.8);
+  margin: 10px 0 0 0;
 }
 
 .main {
@@ -23,23 +41,26 @@ body {
   justify-content: center;
 }
 
-.btn{
-  background-color: salmon;
-  padding: 10px;
-  color: floralwhite;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-  font-weight: bolder;
-  margin: 10px 0 0 2vw;
-}
-
 .cripto{
-  background-color: white;
-  margin: 0 10px 0 10px;
+  background-color: rgb(50,50,50);
+  color: rgba(255, 255, 255,0.8);
+  margin: 30px 10px 0 10px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0,0.5);
   width: 32vw;
+}
+
+.btn{
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  margin: 10px 0 0 2vw;
+  color: rgba(255, 255, 255,0.9);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(200,150,175,0.8);
+  font-weight: bold;
 }
 
 .text-input{
@@ -47,6 +68,18 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   padding: 10px;
+  margin: 5px 0 0 0;
+}
+
+footer{
+  text-align: center;
+  bottom: 0px;
+  position:absolute;
+  width:100%;
+  line-height: 1.5;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255,0.8);
+  background-color: rgb(19, 20, 21);
 }
 
 
