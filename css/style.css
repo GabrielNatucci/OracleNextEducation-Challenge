@@ -7,8 +7,8 @@
 .divtitulo{
   text-align: center;
   font-weight: bold;
-  height: 60px;
-  padding: 10px;
+  padding: 6px;
+  height: 50px;
   width: 100%;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255,0.8);
@@ -31,7 +31,6 @@ article{
   line-height: 2;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255,0.8);
-  margin: 10px 0 0 0;
 }
 
 .main {
@@ -44,7 +43,7 @@ article{
 .cripto{
   background-color: rgb(50,50,50);
   color: rgba(255, 255, 255,0.8);
-  margin: 30px 10px 0 10px;
+  margin: 15px 10px 0 10px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0,0.5);
@@ -52,7 +51,7 @@ article{
 }
 
 .btn{
-  padding: 10px;
+  padding: 7px;
   border-radius: 10px;
   font-weight: bolder;
   margin: 10px 0 0 2vw;
@@ -74,7 +73,8 @@ article{
 footer{
   text-align: center;
   bottom: 0px;
-  position:absolute;
+  position: fixed;
+  height: auto;
   width:100%;
   line-height: 1.5;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
