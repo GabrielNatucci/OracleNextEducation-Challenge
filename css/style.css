@@ -36,14 +36,15 @@ article{
 .main {
   width: 80vw;
   margin: auto;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .cripto{
   background-color: rgb(50,50,50);
   color: rgba(255, 255, 255,0.8);
-  margin: 10px 10px 25px 10px;
+  margin: 10px 0 25px 0;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0,0.5);
