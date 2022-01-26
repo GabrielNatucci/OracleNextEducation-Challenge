@@ -4,13 +4,13 @@ var descripto = document.getElementById("btndescritpo");
 var copiar = document.getElementById("copiar");
 
 cripto.addEventListener("click", function(event){ // Adiciona um evento à página html.
-    input = document.getElementById("inputvalor").value;
     event.preventDefault(); // Evita que a página recarregue.
+    input = document.getElementById("inputvalor").value;
     criptografar(input); 
 });
 
 descripto.addEventListener("click", function(event){ // Adiciona um evento à página html.
-    event.preventDefault(); // Evita que a página recarregue.
+    var input = document.getElementById("inputvalor").value;
     event.preventDefault(); // Evita que a página recarregue.
     descriptografar(input); 
 });
@@ -24,6 +24,8 @@ copiar.addEventListener("click",function(event){
 
 function criptografar(input){
     msg.value = input // Criptografa e imediatamente mostra na caixa de texto.
+        .toLowerCase() // Tira os caractéres maíusculos
+        .normalize("NFD")
         .replace(/e/g,"enter")
         .replace(/i/g,"imes")
         .replace(/a/g,"ai")
@@ -32,7 +34,9 @@ function criptografar(input){
 }
 
 function descriptografar(){
-    msg.value = input // Descriptografa e imediatamente mostra na caixa de texto.
+    msg.value = input // Criptografa e imediatamente mostra na caixa de texto.
+        .toLowerCase() // Tira os caractéres maíusculos
+        .normalize("NFD") // Remove acentos
         .replace(/enter/g,"e")
         .replace(/imes/g,"i")
         .replace(/ai/g,"a")
