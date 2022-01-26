@@ -73,10 +73,10 @@ article{
 .funcionamento{
   margin: 50px 0 0 0;
   text-align: center;
+  justify-content: center;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   line-height: 1.5;
   color: rgba(255, 255, 255,0.9);
-
 
 }
 
