@@ -36,7 +36,7 @@ article{
 .main {
   width: 80vw;
   margin: auto;
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 
@@ -47,7 +47,7 @@ article{
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0,0.5);
-  width: 32vw;
+  width: 100%;
 }
 
 .btn{
