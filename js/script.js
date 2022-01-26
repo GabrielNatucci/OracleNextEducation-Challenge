@@ -10,7 +10,7 @@ cripto.addEventListener("click", function(event){ // Adiciona um evento à pági
 });
 
 descripto.addEventListener("click", function(event){ // Adiciona um evento à página html.
-    var input = document.getElementById("inputvalor").value;
+    input = document.getElementById("inputvalor").value;
     event.preventDefault(); // Evita que a página recarregue.
     descriptografar(input); 
 });
@@ -38,8 +38,8 @@ function descriptografar(){
         .toLowerCase() // Tira os caractéres maíusculos
         .normalize("NFD") // Remove acentos
         .replace(/enter/g,"e")
-        .replace(/imes/g,"i")
         .replace(/ai/g,"a")
+        .replace(/imes/g,"i")
         .replace(/ober/g,"o")
         .replace(/ufat/g,"u");
 }
