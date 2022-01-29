@@ -2,28 +2,33 @@
 var cripto = document.getElementById("btncripto");
 var descripto = document.getElementById("btndescritpo");
 var copiar = document.getElementById("copiar");
+var apagar = document.getElementById("btnapagar");
+var input = document.getElementById("inputvalor").value;
 
 cripto.addEventListener("click", function(event){ // Adiciona um evento à página html.
     event.preventDefault(); // Evita que a página recarregue.
-    input = document.getElementById("inputvalor").value;
-    criptografar(input); 
+    criptografar(input);
 });
 
 descripto.addEventListener("click", function(event){ // Adiciona um evento à página html.
-    input = document.getElementById("inputvalor").value;
     event.preventDefault(); // Evita que a página recarregue.
     descriptografar(input); 
+}); 
+
+apagar.addEventListener("click", function (event) {
+    event.preventDefault();
+    document.getElementById("inputvalor").value = " ";
 });
 
 copiar.addEventListener("click",function(event){
-    var msg = document.getElementById("msg").value; // Seleciona o a caixa de texto onde mostra a mensagem.
+    var msg = document.getElementById("msg"); // Seleciona o a caixa de texto onde mostra a mensagem.
     event.preventDefault(); // Evita que a página recarregue.
-    navigator.clipboard.writeText(msg);
+    navigator.clipboard.writeText(msg.innerHTML);
 });
 
 
 function criptografar(input){
-    msg.value = input // Criptografa e imediatamente mostra na caixa de texto.
+    msg.innerHTML = input // Criptografa e imediatamente mostra na caixa de texto.
         .toLowerCase() // Tira os caractéres maíusculos
         .normalize("NFD")
         .replace(/e/g,"enter")
@@ -34,7 +39,7 @@ function criptografar(input){
 }
 
 function descriptografar(){
-    msg.value = input // Criptografa e imediatamente mostra na caixa de texto.
+    msg.innerHTML = input // Criptografa e imediatamente mostra na caixa de texto.
         .toLowerCase() // Tira os caractéres maíusculos
         .normalize("NFD") // Remove acentos
         .replace(/enter/g,"e")

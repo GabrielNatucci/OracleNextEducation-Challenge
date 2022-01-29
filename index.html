@@ -28,16 +28,23 @@
       <form class = "inputdetexto">
         <label for="input-texto">Mensagem a ser criptografada:</label>
         <input class = "text-input" id = "inputvalor" type="text" name="valor" placeholder="Insira seu texto aqui!">
-        <input class = "btn" type="submit" value="Criptografar" id="btncripto">
-        <input class = "btn" type="submit" value="Descriptografar" id="btndescritpo">
+        <div class="botao">
+          <input class = "btn" type="submit" value="Criptografar" id="btncripto">
+          <input class = "btn" type="submit" value="Descriptografar" id="btndescritpo">
+          <input class = "btn" type="submit" value="Apagar" id = "btnapagar">
+        </div>
       </form>
     </section>
 
     <section class="cripto">
       <div>
         <label class = "desc-tit">Resultado da mensagem criptografada:</label>
-        <input class="text-input" type="text" id="msg"></input>
-        <input class = "btn" type="submit" value="Clique para copiar" id="copiar">
+        <div class = "text-input">
+          <p id = "msg"></p>
+        </div>
+        <div class="botao">
+          <input class = "btn" type="submit" value="Clique para copiar" id="copiar">
+        </div>
       </div>
     </section>
   </main>
