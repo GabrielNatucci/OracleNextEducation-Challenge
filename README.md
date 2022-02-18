@@ -12,12 +12,10 @@ A letra "u" é convertida para "ufat".
 
 O codificador consegue desfazer a mensagem, tornando possível passar uma mensagem codificada por ele.
 
-Fique a vontade para visitar o site que subi no github pages com esse codificador:
-
-https://gabrielnatucci.github.io/OracleNextEducation-Challenge/
-
 Fique a vontade para ler meu código.
 
-desenvolvedor: Gabriel Natucci
-email: gabriel.natuccirusso@hotmail.com
-ano: 2022
+Desenvolvedor: Gabriel Natucci
+
+Email: gabriel.natuccirusso@hotmail.com
+
+Ano: 2022
